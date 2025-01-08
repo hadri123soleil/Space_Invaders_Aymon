@@ -1,0 +1,5 @@
+1) t_arme
+2) t_commande
+3) t_joueur (car dépend de t_commande)
+4) t_suivre (car dépend de t_arme et t_commande)
+5) t_avoir (car dépend de t_arme et t_joueur)

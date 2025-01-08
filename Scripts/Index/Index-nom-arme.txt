@@ -1,0 +1,1 @@
+CREATE INDEX idx_t_arme_nom ON t_arme (nom);
