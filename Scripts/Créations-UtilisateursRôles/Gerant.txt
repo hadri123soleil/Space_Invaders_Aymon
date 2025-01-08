@@ -1,6 +1,0 @@
-CREATE ROLE gerant;
-GRANT SELECT ON db_space_invaders.t_joueur TO 'gerant';
-GRANT SELECT, UPDATE, DROP ON db_space_invaders.t_arme TO 'gerant';
-CREATE USER 'gerant'@'localhost' IDENTIFIED BY 'gerant';
-GRANT gerant TO 'gerant'@'localhost';
-SET DEFAULT ROLE gerant TO 'gerant'@'localhost';

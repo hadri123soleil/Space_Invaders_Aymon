@@ -1,7 +1,0 @@
-CREATE ROLE joueur;
-GRANT INSERT , SELECT ON db_space_invaders.t_commande TO 'joueur';
-GRANT SELECT ON db_space_invaders.t_arme TO 'joueur';
-CREATE USER 'joueur1'@'localhost' IDENTIFIED BY 'joueur1';
-GRANT joueur TO 'joueur1'@'localhost';
-SET DEFAULT ROLE joueur TO 'joueur1'@'localhost';
-
