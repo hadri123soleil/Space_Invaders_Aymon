@@ -1,0 +1,5 @@
+CREATE ROLE adminjeu;
+GRANT INSERT, SELECT, CREATE, UPDATE, DROP ON db_space_invaders.* TO 'adminjeu';
+CREATE USER 'adminjeu'@'localhost' IDENTIFIED BY 'adminjeu';
+GRANT adminjeu TO 'adminjeu'@'localhost';
+SET DEFAULT ROLE adminjeu TO 'adminjeu'@'localhost';
